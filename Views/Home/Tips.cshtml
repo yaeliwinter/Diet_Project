@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Tips";
+
+}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#Menu").click(function () {
+                    $("#Text").slideToggle("slow");
+                });
+            });
+
+            $(document).ready(function () {
+                $("#MenuFood").click(function () {
+                    $("#TextFood").slideToggle("slow");
+                });
+            });
+
+            $(document).ready(function () {
+                $("#MenuSport").click(function () {
+                    $("#TextSport").slideToggle("slow");
+                });
+            });
+        </script>
+
+
+        <style>
+
+
+            #Text, #Menu {
+                width: 200px;
+                height: 30px;
+                text-align: center;
+                background-color: #44f28d;
+                border: solid 1px #c3c3c3;
+            }
+
+            #Text {
+                height: 280px;
+                display: none;
+            }
+
+            #TextSport, #MenuSport {
+                width: 200px;
+                height: 30px;
+                text-align: center;
+                background-color: #00ffff;
+                border: solid 1px #c3c3c3;
+            }
+
+            #TextSport {
+                height: 280px;
+                display: none;
+            }
+
+
+            #TextFood, #MenuFood {
+                /*float: right;*/
+                right: 250px;
+                width: 200px;
+                height: 30px;
+                text-align: center;
+                background-color: #b6ff00;
+                border: solid 1px #c3c3c3;
+            }
+
+            #TextFood {
+                right: 250px;
+                height: 280px;
+                display: none;
+            }
+        </style>
+    </head>
+
+
+
+    <div class="row">
+        <p id="Drink">
+            <div id="Menu"  class="col bg-success">שתיה</div>
+            <div id="Text" class="col bg-success"> <br />המים, נוזל החיים שלנו <br />  נשים 9 כוסות מים ביום <br />גברים עם כ-13<br /></div>
+        </p>
+
+        <p id="Food" >
+            <div id="MenuFood" class=" bg-warning">מזון</div>
+            <div id="TextFood" class=" bg-warning"> <br />המזון המנוע של גופנו <br /> יש לנהל את צריכת המזון בהתאם לאורח חייו של האדם</div>
+        </p>
+
+        <p id="Sport" >
+            <div id="MenuSport" class="col bg-success">ספורט</div>
+            <div id="TextSport" class="col bg-success"> <br />ספורט  <br /> חשוב מאד!!! <br />כ - 40 דקות הליכה ביום<br /></div>
+        </p>
+
+     
+    </div>
+

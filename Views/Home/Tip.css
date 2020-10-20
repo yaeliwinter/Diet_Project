@@ -1,0 +1,56 @@
+﻿body {
+}
+<style >
+#page {
+    position: absolute;
+}
+
+#Food {
+    float: right;
+}
+
+#Sport {
+    float: right;
+}
+
+#Text, #Menu {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    background-color: #44f28d;
+    border: solid 1px #c3c3c3;
+}
+
+#Text {
+    height: 280px;
+    display: none;
+}
+
+#TextSport, #MenuSport {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    background-color: #00ffff;
+    border: solid 1px #c3c3c3;
+}
+
+#TextSport {
+    height: 280px;
+    display: none;
+}
+
+
+#TextFood, #MenuFood {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    background-color: #b6ff00;
+    border: solid 1px #c3c3c3;
+}
+
+#TextFood {
+    height: 280px;
+    display: none;
+}
+
+</style >
